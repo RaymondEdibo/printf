@@ -57,7 +57,7 @@ int handle_d(va_list args)
 }
 /**
  *print_number - check the code
- *@num:
+ *@args:
  *
  *Return: length
  */
