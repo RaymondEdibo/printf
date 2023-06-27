@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  *handle_c - check the code
- *@args:
+ *@args: argrs
  *
  *Return: length
  */
@@ -16,7 +16,7 @@ int handle_c(va_list args)
 }
 /**
  *handle_s - check the code
- *@args:
+ *@args: args
  *
  *Return: length
  */
