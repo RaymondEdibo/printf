@@ -33,45 +33,6 @@ int handle_s(va_list args)
 	return (l);
 }
 /**
- *handle_d - check the code
- *@args:
- *
- *Return: length
- */
-int handle_d(va_list args)
-{
-	int num = va_arg(args, int);
-	int l = 0;
-
-	if (num < 0)
-	{
-		write(1, "-", 1);
-		num = -num;
-		l++;
-	}
-
-	l += print_number(num);
-
-	return (l);
-}
-/**
- *print_number - check the code
- *@num:
- *
- *Return: length
- */
-int print_number(int num)
-{
-	char digit;
-
-	if (num / 10 != 0)
-		print_number(num / 10);
-	digit = (num % 10) + '0';
-	write(1, &digit, 1);
-
-	return (1);
-}
-/**
  *handle_percent - check the code
  *
  *Return: length
