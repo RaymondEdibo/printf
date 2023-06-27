@@ -23,15 +23,12 @@ int handle_c(va_list args)
  */
 int handle_s(va_list args)
 {
-	int l = 0;
 	char *s = va_arg(args, char*);
 
 	if (s == NULL)
 		s = "(null)";
-	while (s[l])
-		l++;
-	write(1, s, l);
-	return (l);
+	write(1, s, strlen(s));
+	return (strlen(s));
 }
 /**
  *handle_percent - check the code
