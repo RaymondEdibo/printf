@@ -47,4 +47,3 @@ int _printf(const char *format, ...)
 
 	return (char_count);
 }
-
