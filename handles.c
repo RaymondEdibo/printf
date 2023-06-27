@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include <unistd.h>
-#include <string.h>
 #include "main.h"
 /**
  *handle_c - check the code
